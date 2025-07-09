@@ -485,9 +485,9 @@ input[type=submit]{
 
 
 /* for MOBILE VIEW */
-@media (max-width: 375px) {
+@media (max-width: 480px) {
     html{
-        font-size: 37.5%;
+        font-size: 40%;
     }
     body,html{
         overflow-x: hidden;
@@ -542,7 +542,9 @@ nav{
 .navlist{
     display: none;
 }
-
+.showList{
+    display: block;
+}
     .banner{
         height: 31vh;
         width: 100vw;
@@ -588,6 +590,11 @@ nav{
 .service_blocks{
     flex-direction: column;
 }
+.gallery_images img{
+    width: 16.2rem;
+    height: 16.2rem;
+   
+}
 .numbers h3{
     font-size: 3.6rem;
     margin-bottom: 0.6rem;
@@ -608,11 +615,12 @@ nav{
     gap: 3rem;
 }
 .contact_form .name_email{
-    width: 60rem;
+    width: 100%;
+    
 }
 .contact_form input,textarea{
     padding: 1.5rem 1rem;
-    width: 60rem;
+    width: 100%;
     
 }
 input[type=submit]{
